@@ -8,4 +8,4 @@ def is_any_string_upper_here(iterable):
     >>> is_any_string_upper_here(["swimm", "UNIt", "swIMMING"])
     False
     """
-    pass
+    return any(map(str.isupper, iterable))

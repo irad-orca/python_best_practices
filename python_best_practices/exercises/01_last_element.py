@@ -8,4 +8,4 @@ def last_element(my_list_or_string):
     >>> last_element("swimm")
     'm'
     """
-    pass
+    return my_list_or_string[-1]

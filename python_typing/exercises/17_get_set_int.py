@@ -5,9 +5,9 @@
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # This is new:
 # https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
+from typing import Set
 
-
-def get_set_int(s) -> None:
+def get_set_int(s: Set[int]) -> None:
     pass  # The implementation doesn't matter here
 
 

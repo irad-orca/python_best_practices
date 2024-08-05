@@ -8,4 +8,5 @@ def full_names(first_names, last_names):
     John Smith
     Swimm io
     """
-    pass
+    for first, last in zip(first_names, last_names):
+        print(f"{first} {last}")

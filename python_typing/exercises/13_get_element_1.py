@@ -4,9 +4,9 @@
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
+from typing import Optional, Sequence
 
-
-def get_element_1(members):
+def get_element_1(members: Sequence[int]) -> Optional[int]:
     if len(members) < 2:
         return None
     return members[1]

@@ -7,4 +7,4 @@ def sort_by_third_element(iterable):
     >>> sort_by_third_element([(1,2,3,4), (1,5,9,1023), (1,1,1)])
     [(1, 1, 1), (1, 2, 3, 4), (1, 5, 9, 1023)]
     """
-    pass
+    return sorted(iterable, key=lambda x: x[2])

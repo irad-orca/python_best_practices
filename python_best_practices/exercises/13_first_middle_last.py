@@ -9,4 +9,5 @@ def first_middle_last(iterable):
     [2, 3, 4]
     5
     """
-    pass
+    first, *middle, last = iterable
+    print(f"{first}\n{middle}\n{last}")

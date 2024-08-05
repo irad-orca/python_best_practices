@@ -4,7 +4,7 @@
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 
-def handle_variable_type_input(str_int) -> int:
+def handle_variable_type_input(str_int: str | int) -> int:
     """
     This function returns 5 if the input is of type string
     otherwise it returns the value.

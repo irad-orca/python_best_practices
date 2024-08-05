@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 def sum_of_keys(input_dict):
     """
     Receives `input_dict`, and returns a dictionary where every key is the a value in `input_dict`,
@@ -10,4 +12,7 @@ def sum_of_keys(input_dict):
     >>> output['io']
     5
     """
-    pass
+    result = defaultdict(int)
+    for key, value in input_dict.items():
+        result[value] += key
+    return result

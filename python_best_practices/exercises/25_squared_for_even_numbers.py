@@ -6,4 +6,4 @@ def squared_for_even_numbers(iterable):
     >>> squared_for_even_numbers([1,2,3,4])
     [4, 16]
     """
-    pass
+    return [x**2 for x in iterable if x % 2 == 0]

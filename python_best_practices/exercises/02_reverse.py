@@ -6,5 +6,5 @@ def reverse(my_list_or_string):
     >>> reverse("swimm")
     'mmiws'
     """
-    pass
+    return my_list_or_string[::-1]
 

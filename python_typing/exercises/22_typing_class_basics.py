@@ -13,7 +13,7 @@ class A:
 
 
 class B:
-    def f(self, a):
+    def f(self, a: A) -> None:
         pass  # The implementation doesn't matter here
 
 

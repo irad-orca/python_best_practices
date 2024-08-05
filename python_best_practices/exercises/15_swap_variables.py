@@ -7,4 +7,5 @@ def swap_variables(x, y):
     world: hello
     """
     # Don't change the line below - just add one line of code
+    x, y = y, x
     print(f'{x}: {y}')

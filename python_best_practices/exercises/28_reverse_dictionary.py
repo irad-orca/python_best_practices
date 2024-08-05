@@ -6,4 +6,4 @@ def reverse_dictionary(input_dict):
     >>> reverse_dictionary({1: 'a', 2: 'b', 3: 'c'})
     {'a': 1, 'b': 2, 'c': 3}
     """
-    pass
+    return {v:k for k,v in input_dict.items()}

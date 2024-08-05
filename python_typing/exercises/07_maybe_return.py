@@ -6,9 +6,9 @@
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
 
 import random
+from typing import Optional
 
-
-def maybe_return():
+def maybe_return() -> Optional[int]:
     if random.random() > 0.5:
         return None
     return 7

@@ -11,4 +11,4 @@ def key_and_value_or_swimm(dictionary, key):
     >>> key_and_value_or_swimm(d, "non_existing")
     'swimm'
     """
-    pass
+    return dictionary.get(key, "swimm")

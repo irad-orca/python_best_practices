@@ -6,4 +6,4 @@ def squared_set(iterable):
     >>> squared_set([1,2,3,-3,4,3])
     {16, 1, 4, 9}
     """
-    pass
+    return {x**2 for x in iterable}

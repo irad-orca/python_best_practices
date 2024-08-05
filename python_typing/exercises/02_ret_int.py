@@ -3,5 +3,5 @@
 # Reference:
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 
-def ret_int() -> str:
+def ret_int() -> int:
     return 42

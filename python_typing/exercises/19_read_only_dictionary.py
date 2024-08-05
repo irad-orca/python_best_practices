@@ -5,9 +5,9 @@
 
 # This is new:
 # https://mypy.readthedocs.io/en/stable/more_types.html
+from typing import Mapping
 
-
-def read_only_dictionary(d) -> None:
+def read_only_dictionary(d: Mapping[str, int]) -> None:
     pass  # The implementation doesn't matter here
 
 

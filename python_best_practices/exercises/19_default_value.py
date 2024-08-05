@@ -9,4 +9,4 @@ def default_value(argument):
     >>> default_value(None)
     'swimm'
     """
-    pass
+    return argument or 'swimm'

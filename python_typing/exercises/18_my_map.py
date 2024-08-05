@@ -4,13 +4,14 @@
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
+from typing import Iterable, List, Callable
 
 
 def cb(a: int) -> int:
     return a
 
 
-def my_map(it, cb):
+def my_map(it: Iterable[int], cb: Callable[[int], int]) -> List[int]:
     ret = []
     for i in it:
         ret.append(cb(i))

@@ -8,4 +8,4 @@ def squared_generator(iterable):
     >>> list(g)
     [1, 4, 9]
     """
-    pass
+    return (x**2 for x in iterable)

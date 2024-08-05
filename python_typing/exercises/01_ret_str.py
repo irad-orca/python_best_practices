@@ -4,5 +4,5 @@
 # References:
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 
-def ret_str():
+def ret_str() -> str:
     return "Swimm"

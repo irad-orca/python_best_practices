@@ -1,3 +1,6 @@
+from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
 def add_points(p1, p2):
     """
     >>> p1 = Point(x=0, y=0)
@@ -10,4 +13,4 @@ def add_points(p1, p2):
     >>> p3 == p2
     True
     """
-    pass
+    return Point(p1.x+p2.x, p1.y+p2.y)

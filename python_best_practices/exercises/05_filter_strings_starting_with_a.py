@@ -4,4 +4,4 @@ def filter_string_starting_with_a(list_of_strings):
     >>> filter_string_starting_with_a(["hello", "abc", "Abraham", "all my loving"])
     ['abc', 'all my loving']
     """
-    pass
+    return list(filter(lambda x: x.startswith("a"), list_of_strings))

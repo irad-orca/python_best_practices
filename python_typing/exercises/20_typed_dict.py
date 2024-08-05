@@ -5,9 +5,16 @@
 
 # This is new:
 # https://mypy.readthedocs.io/en/stable/more_types.html
+from typing import TypedDict, List, Optional
 
+class MySpecialDict(TypedDict):
+    str_field: str
+    int_field: int
+    float_field: float
+    list_field: List[int]
+    optional_str_field: Optional[str]
 
-def ret_typed_dict():
+def ret_typed_dict() -> MySpecialDict:
     return {
         "str_field": "str",
         "int_field": 0,

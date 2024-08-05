@@ -8,4 +8,4 @@ def convert_to_decimal(input_number, base):
     >>> convert_to_decimal(101, 16)
     257
     """
-    pass
+    return int(str(input_number), base)

@@ -5,7 +5,7 @@
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
 
-def variable_input_args(*args):
+def variable_input_args(*args: str) -> str:
     return ",".join(args)
 
 

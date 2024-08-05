@@ -8,4 +8,4 @@ def merge_dicts(dict_1, dict_2, dict_3):
     >>> sorted(merged_dict.items())
     [('a', 1), ('b', 3), ('c', 2), ('e', 3)]
     """
-    pass
+    return {**dict_1, **dict_2, **dict_3}

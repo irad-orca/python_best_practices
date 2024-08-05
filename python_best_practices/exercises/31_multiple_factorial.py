@@ -1,3 +1,6 @@
+import math
+from concurrent.futures import ThreadPoolExecutor
+
 def factorial(x):
     # Assume this function performs a heavy computation
     return math.factorial(x)
@@ -19,4 +22,6 @@ def multiple_factorial(iterable):
     40320
     362880
     """
-    pass
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        for result in executor.map(factorial, iterable):
+            print(result)

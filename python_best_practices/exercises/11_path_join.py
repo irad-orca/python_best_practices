@@ -4,4 +4,4 @@ def path_join(*args):
     >>> path_join('a', 'b', 'c')
     'a/b/c'
     """
-    pass
+    return "/".join(args)

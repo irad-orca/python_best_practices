@@ -10,4 +10,4 @@ def is_greater_than_2(number):
     >>> is_greater_than_2(100)
     True
     """
-    pass
+    return number > 2

@@ -7,4 +7,5 @@ def print_with_indexes(my_list):
     1: b
     2: c
     """
-    pass
+    for i, item in enumerate(my_list):
+        print(f"{i}: {item}")

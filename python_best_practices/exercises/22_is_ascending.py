@@ -13,4 +13,4 @@ def is_ascending(a, b, c):
     >>> is_ascending(-1,5,20)
     True
     """
-    pass
+    return a < b < c

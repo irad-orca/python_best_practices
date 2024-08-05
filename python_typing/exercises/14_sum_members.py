@@ -4,9 +4,9 @@
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
+from typing import Iterable
 
-
-def sum_members(members):
+def sum_members(members: Iterable[int]) -> int:
     sm = 0
     for mem in members:
         sm += mem

@@ -5,5 +5,5 @@
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 
 
-def multiple_ret():
+def multiple_ret() -> tuple[str, int]:
     return "Swimm", 2

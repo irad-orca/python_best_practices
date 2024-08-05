@@ -5,4 +5,5 @@ def flatten_2d_list(my_list):
     ('a', 'c', 'e')
     ('b', 'd', 'f')
     """
-    pass
+    for tuple in zip(*my_list):
+        print(tuple)

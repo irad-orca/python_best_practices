@@ -5,4 +5,4 @@ def squared_list(iterable):
     >>> squared_list([1,2,3])
     [1, 4, 9]
     """
-    pass
+    return [x**2 for x in iterable]

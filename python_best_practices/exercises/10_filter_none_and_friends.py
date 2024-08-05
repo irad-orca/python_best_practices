@@ -4,4 +4,4 @@ def filter_none_and_friends(my_list):
     >>> filter_none_and_friends(["hello", '', {}, {'a':1}, [], [1], 0, 1, None, False, True])
     ['hello', {'a': 1}, [1], 1, True]
     """
-    pass
+    return list(filter(bool, my_list))

@@ -4,9 +4,9 @@
 # https://mypy.readthedocs.io/en/stable/builtin_types.html
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
+from typing import List
 
-
-def squared_list(int_list):
+def squared_list(int_list: List[int]) -> List[int]:
     return [i ** 2 for i in int_list]
 
 

@@ -8,4 +8,4 @@ def is_only_upper_strings(iterable):
     >>> is_only_upper_strings(["SWIMM", "UNIT", "SWimmING"])
     False
     """
-    pass
+    return all(map(str.isupper, iterable))

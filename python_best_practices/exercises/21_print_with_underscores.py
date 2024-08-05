@@ -4,4 +4,4 @@ def print_with_underscores(my_list):
     >>> print_with_underscores(["hello", "world", "from", "swimm"])
     hello__world__from__swimm
     """
-    pass
+    print(*my_list, sep="__")

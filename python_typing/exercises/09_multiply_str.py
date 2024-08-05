@@ -5,7 +5,7 @@
 # https://mypy.readthedocs.io/en/stable/type_inference_and_annotations.html
 # https://mypy.readthedocs.io/en/stable/kinds_of_types.html
 
-def multiply_str(s, count):
+def multiply_str(s: str, count: int) -> str:
     return s * count
 
 

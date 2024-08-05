@@ -8,4 +8,4 @@ def pretty_print_number(number):
     >>> pretty_print_number(2**32)
     '4,294,967,296'
     """
-    pass
+    return f"{number:,}"

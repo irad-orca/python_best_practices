@@ -9,7 +9,7 @@
 # https://mypy.readthedocs.io/en/stable/class_basics.html
 
 class D:
-    def __init__(self, c) -> None:
+    def __init__(self, c: "C") -> None:
         pass  # The implementation doesn't matter here
 
 

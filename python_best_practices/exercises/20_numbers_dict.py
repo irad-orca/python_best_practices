@@ -10,4 +10,4 @@ def numbers_dict():
     >>> 1_000 == 1_0_0_0 == 1000 == 100_0
     True
     """
-    pass
+    return {'one': 1, 'thousand': 1000, 'million': 1000000}

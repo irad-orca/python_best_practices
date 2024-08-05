@@ -1,3 +1,5 @@
+from collections import Counter
+
 def counting_occurrences(iterable, element):
     """
     Use `collections` module to implement this function that returns how many times `element` appears in `iterable`.
@@ -9,4 +11,4 @@ def counting_occurrences(iterable, element):
     >>> counting_occurrences(['swimm', 'hi', 'swimm', 'bye'], 'non_existing')
     0
     """
-    pass
+    return Counter(iterable)[element]

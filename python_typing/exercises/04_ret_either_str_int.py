@@ -7,7 +7,7 @@
 import random
 
 
-def ret_either_str_int() -> str:
+def ret_either_str_int() -> str | int:
     if random.random() > 0.5:
         return "Swimm"
     return 42
